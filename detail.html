@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detaill Berita</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#F8F8F8] pt-16 overflow-x-hidden">
+    
+<!-- HEADER -->
+ <div id="header-component"></div>
+
+    <main>
+
+       <!-- <div id="breadcrumb-container" class="hidden pt-8 pb-2">
+            <div class="container-custom px-4 md:px-8 mx-auto max-w-6xl">
+                <div class="flex items-center gap-3 text-sm text-gray-500">
+                    
+                    <i class="fa-solid fa-house-chimney cursor-pointer hover:text-blue-500 transition" onclick="document.querySelectorAll('.nav-link')[0].click()"></i>
+                    
+                    <span class="cursor-pointer hover:text-blue-500 transition" onclick="document.querySelectorAll('.nav-link')[0].click()">Beranda</span>
+                    
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    <span id="breadcrumb-category" class="text-gray-900 font-medium capitalize">Kategori</span>
+                    
+                </div>
+            </div>
+        </div> -->
+        <section class="pt-10 pb-6">
+            <div class="container-custom px-4 md:px-8 mx-auto max-w-6xl">
+
+                <div class="flex items-center gap-3 text-sm text-gray-500 mb-10">
+                    <i class="fa-solid fa-house"></i>
+
+                    <a href="index.html" class="hover:text-blue-500">
+                        Beranda
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+
+                    <span id="breadcrumb-kategori" class="capitalize">Nasional</span>
+
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+
+                    <span class="text-gray-900">
+                        Detail
+                    </span>
+                </div>
+
+                <!-- Layout -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 ">
+
+                    <!-- CONTENT -->
+                    <div class="lg:col-span-8 xl:col-span-8">
+
+                        <h1 id="detail-title" class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                             Memuat Judul Berita...
+                        </h1>
+
+                        <div class="flex items-center gap-4 text-sm mb-8">
+                            <span id="detail-category" class="text-blue-500 font-semibold uppercase">
+                                Kategori
+                            </span>
+
+                            <span class="text-gray-400">
+                                •
+                            </span>
+
+                            <span id="detail-date" class="text-gray-500">
+                                Memuat Tanggal...
+                            </span>
+                        </div>
+
+                        <!-- Gambar -->
+                        <img
+                            id="detail-image"
+                            src=""
+                            alt=""
+                           class="w-full aspect-[16/9] object-cover rounded-2xl mb-3"
+                        >
+
+                        <p class="text-sm text-gray-400 mb-10">
+                            Rumput GBK tidak kunjung bagus, Timnas Indonesia bisa pindah kandang.
+                        </p>
+
+                        <!-- Isi berita -->
+                        <div id="detail-content" class="space-y-6 text-base   text-gray-700 leading-8 mt-8">
+
+                            <p>
+                               Memuat isi berita...
+                            </p>
+
+                            <!-- <p>
+                                Akhir-akhir ini rumput lapangan Stadion GBK yang jadi
+                                markas Indonesia dalam babak kedua Kualifikasi Piala Dunia
+                                2026 kerap bermasalah.
+                            </p>
+
+                            <p>
+                                Acara-acara di luar sepak bola itu kerap membuat kondisi
+                                rumput tidak sehat dan tidak terlihat bagus saat
+                                pertandingan.
+                            </p>
+
+                            <p>
+                                Sampai saat melawan Irak, rumput GBK tidak terlihat
+                                sempurna meskipun kondisinya lebih bagus dibanding
+                                lawan Vietnam.
+                            </p>
+
+                            <p>
+                                "Nanti kami akan sampaikan [rencana pindah dari GBK],"
+                                ujar Sumardji saat ditanya kemungkinan menggunakan
+                                stadion lain di putaran ketiga kualifikasi.
+                            </p> -->
+
+                        </div>
+
+                        <div class="mt-12 border-t border-gray-100 pt-10">
+                            
+                            <div class="flex items-center gap-2.5 mb-6">
+                                <div class="w-1 h-5 bg-[#0090FF] rounded-full"></div>
+                                <h2 class="text-lg font-bold text-gray-900">Komentar</h2>
+                            </div>
+
+                            <div class="flex gap-3 md:gap-4">
+                                <img src="https://i.pravatar.cc/150?img=11" alt="User Avatar" class="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover shrink-0 shadow-sm">
+                                <div class="flex-1 w-full">
+                                    <textarea placeholder="Apa yang ingin anda tanyakan?" class="w-full border border-gray-200 rounded-lg p-3 outline-none focus:border-[#0090FF] transition resize-none text-sm text-gray-700" rows="3"></textarea>
+                                    <div class=" flex mt-1 justify-between">
+                                    <div class="text-right text-[11px] text-gray-400 mt-1 font-medium">0/50</div>
+                                    <button class="bg-[#0090FF] hover:bg-blue-600 text-white px-6 py-2 rounded-lg text-sm font-medium transition mt-2 shadow-md">
+                                        Kirim
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="border-gray-200 my-6">
+
+                            <div class="space-y-6">
+                                
+                                <div class="flex gap-3 md:gap-4">
+                                    <img src="https://i.pravatar.cc/150?img=60" alt="User Avatar" class="w-9 h-9 rounded-full object-cover shrink-0 shadow-sm">
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-2 mb-1.5">
+                                            <span class="font-bold text-gray-800 text-[13px]">UJANG YUSMEIDI S.P., M.Agr.</span>
+                                            <span class="text-gray-200 text-[8px]"><i class="fa-solid fa-circle"></i></span>
+                                            <span class="text-gray-400 text-xs">28 Mar 2024 11:15</span>
+                                        </div>
+                                        
+                                        <p class="text-gray-700 text-[13px] leading-relaxed mb-2.5">
+                                            Mohon maaf, apakah sertifikatnya sudah tidak dapat diunduh ? Karena saya mau download ada konfirmasi bahwa TOTP aktivasi salah Bagaimana ya solusinya ?
+                                        </p>
+                                        
+                                        <button class="text-[#0090FF] text-xs font-medium hover:underline transition">Balas</button>
+
+                                        <div class="mt-4 flex gap-3 md:gap-4">
+                                            <img src="https://i.pravatar.cc/150?img=5" alt="User Avatar" class="w-8 h-8 rounded-full object-cover shrink-0 shadow-sm">
+                                            <div class="flex-1">
+                                                <div class="flex items-center gap-2 mb-1.5">
+                                                    <span class="font-semibold text-gray-800 text-[13px]">DINA RIKHA RIYANAWATI, S.Pd</span>
+                                                    <span class="text-gray-200 text-[8px]"><i class="fa-solid fa-circle"></i></span>
+                                                    <span class="text-gray-400 text-xs">28 Mar 2024 11:15</span>
+                                                </div>
+                                                
+                                                <p class="text-gray-700 text-[13px] leading-relaxed mb-2.5">
+                                                    saya mengunduh sertifikatnya kok juga belumbisa
+                                                </p>
+                                                
+                                                <button class="text-[#0090FF] text-xs font-medium hover:underline transition">Balas</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                </div>
+                                </div>
+
+                            <hr class="border-gray-100 my-6">
+
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-gray-500 gap-3">
+                                
+                                <div class="flex items-center gap-2.5">
+                                    <span>Item per page</span>
+                                    <div class="relative">
+                                        <select class="appearance-none border border-gray-200 rounded py-0.5 pl-2 pr-6 outline-none text-gray-700 bg-white hover:border-gray-300 cursor-pointer text-xs">
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>20</option>
+                                        </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1.5 text-gray-400">
+                                            <i class="fa-solid fa-chevron-down text-[8px]"></i>
+                                        </div>
+                                    </div>
+                                    <span>of 200</span>
+                                </div>
+
+                                <div class="flex items-center gap-5">
+                                    <button class="text-gray-300 hover:text-[#0090FF] transition cursor-pointer"><i class="fa-solid fa-chevron-left text-[10px]"></i></button>
+                                    <div class="flex items-center gap-3.5 font-medium">
+                                        <button class="text-[#0090FF]">1</button>
+                                        <button class="text-gray-500 hover:text-[#0090FF] transition">2</button>
+                                    </div>
+                                    <button class="text-gray-300 hover:text-[#0090FF] transition cursor-pointer"><i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-16 pt-8 border-t border-gray-100">
+                            
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-1 h-6 bg-[#0090FF] rounded-full"></div>
+                                    <h2 class="text-xl font-bold text-gray-900">Berita Terkait</h2>
+                                </div>
+                                <button id="btn-lihat-semua" class="px-5 py-2 border border-[#0090FF] text-[#0090FF] bg-[#F0F8FF] text-sm font-medium rounded-lg hover:bg-[#0090FF] hover:text-white transition duration-300">
+                                    Lihat Semua
+                                </button>
+                            </div>
+
+                            <div id="related-news-container" class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                                
+                                <div class="group cursor-pointer flex flex-col">
+                                    <img src="https://picsum.photos/400/250?10" alt="News Image" class="w-full h-36 object-cover rounded-xl mb-4 group-hover:opacity-90 transition duration-300">
+                                    <h3 class="font-bold text-gray-800 text-sm leading-relaxed mb-3 line-clamp-3 group-hover:text-[#0090FF] transition duration-300">
+                                        Pj. Gubernur Adhy Tekankan Pelayanan Berkualitas saat Sharing Session di RSUD Dr. S...
+                                    </h3>
+                                    <div class="flex items-center gap-2 text-xs mt-auto">
+                                        <span class="text-[#0090FF] font-semibold">Nasional</span>
+                                        <span class="text-gray-300 text-[8px]"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-gray-500">22 Jan 2024</span>
+                                    </div>
+                                </div>
+
+                                <div class="group cursor-pointer flex flex-col">
+                                    <img src="https://picsum.photos/400/250?11" alt="News Image" class="w-full h-36 object-cover rounded-xl mb-4 group-hover:opacity-90 transition duration-300">
+                                    <h3 class="font-bold text-gray-800 text-sm leading-relaxed mb-3 line-clamp-3 group-hover:text-[#0090FF] transition duration-300">
+                                        Flypass Bonanza dan Heli Bell 505 Warnai Tupdik dan Wing Day 11 Perwira Penerbang TNI...
+                                    </h3>
+                                    <div class="flex items-center gap-2 text-xs mt-auto">
+                                        <span class="text-[#0090FF] font-semibold">Nasional</span>
+                                        <span class="text-gray-300 text-[8px]"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-gray-500">22 Jan 2024</span>
+                                    </div>
+                                </div>
+
+                                <div class="group cursor-pointer flex flex-col">
+                                    <img src="https://picsum.photos/400/250?12" alt="News Image" class="w-full h-36 object-cover rounded-xl mb-4 group-hover:opacity-90 transition duration-300">
+                                    <h3 class="font-bold text-gray-800 text-sm leading-relaxed mb-3 line-clamp-3 group-hover:text-[#0090FF] transition duration-300">
+                                        Perwira Penerbangan TNI AL Raih Gelar "Double Degree di PSL Université Paris
+                                    </h3>
+                                    <div class="flex items-center gap-2 text-xs mt-auto">
+                                        <span class="text-[#0090FF] font-semibold">Nasional</span>
+                                        <span class="text-gray-300 text-[8px]"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-gray-500">22 Jan 2024</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SIDEBAR -->
+                    <div class="lg:col-span-4 xl:col-span-4">
+                        <div class="lg:sticky lg:top-24">
+
+                            <div class="flex items-center gap-3 mb-8">
+                                <div class="w-1 h-6 bg-[#0090FF] rounded-full"></div>
+                                <h2 class="text-xl font-bold text-gray-900">
+                                    Berita Terpopuler
+                                </h2>
+                            </div>
+
+                            <div class="space-y-0">
+
+                                <div class="flex gap-4 items-start border-b border-gray-100 pb-6 mb-6">
+                                    <div class="relative shrink-0 ml-2 mt-2">
+                                        <div class="absolute -top-3 -left-3 w-7 h-7 rounded-full bg-[#2A313C] text-white flex items-center justify-center text-xs font-bold shadow-md z-10">
+                                            1
+                                        </div>
+                                        <img src="https://picsum.photos/120/120?1" class="w-24 h-24 rounded-xl object-cover shadow-sm cursor-pointer hover:opacity-90 transition" alt="News Thumbnail">
+                                    </div>
+                                    <div class="flex flex-col mt-1">
+                                        <h3 class="font-bold text-gray-800 text-sm leading-snug line-clamp-3 hover:text-[#0090FF] transition cursor-pointer">
+                                            Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera Hamas?
+                                        </h3>
+                                        <div class="flex items-center gap-2 mt-3 text-xs">
+                                            <span class="text-[#0090FF] font-semibold">Politik</span>
+                                            <span class="text-gray-200 text-[8px]"><i class="fa-solid fa-circle"></i></span>
+                                            <span class="text-gray-500">22 Jan 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-4 items-start border-b border-gray-100 pb-6 mb-6">
+                                    <div class="relative shrink-0 ml-2 mt-2">
+                                        <div class="absolute -top-3 -left-3 w-7 h-7 rounded-full bg-[#2A313C] text-white flex items-center justify-center text-xs font-bold shadow-md z-10">
+                                            2
+                                        </div>
+                                        <img src="https://picsum.photos/120/120?2" class="w-24 h-24 rounded-xl object-cover shadow-sm cursor-pointer hover:opacity-90 transition" alt="News Thumbnail">
+                                    </div>
+                                    <div class="flex flex-col mt-1">
+                                        <h3 class="font-bold text-gray-800 text-sm leading-snug line-clamp-3 hover:text-[#0090FF] transition cursor-pointer">
+                                            Daftar 6 Lahan Tambang Jatah Ormas Agama, NU Dapat Bekas Grup Bakrie
+                                        </h3>
+                                        <div class="flex items-center gap-2 mt-3 text-xs">
+                                            <span class="text-[#0090FF] font-semibold">Nasional</span>
+                                            <span class="text-gray-200 text-[8px]"><i class="fa-solid fa-circle"></i></span>
+                                            <span class="text-gray-500">22 Jan 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-4 items-start border-b border-gray-100 pb-6 mb-6">
+                                    <div class="relative shrink-0 ml-2 mt-2">
+                                        <div class="absolute -top-3 -left-3 w-7 h-7 rounded-full bg-[#2A313C] text-white flex items-center justify-center text-xs font-bold shadow-md z-10">
+                                            3
+                                        </div>
+                                        <img src="https://picsum.photos/120/120?3" class="w-24 h-24 rounded-xl object-cover shadow-sm cursor-pointer hover:opacity-90 transition" alt="News Thumbnail">
+                                    </div>
+                                    <div class="flex flex-col mt-1">
+                                        <h3 class="font-bold text-gray-800 text-sm leading-snug line-clamp-3 hover:text-[#0090FF] transition cursor-pointer">
+                                            Kementerian BUMN Mulai Uji Coba Pegawai Kerja 4 Hari Sepekan
+                                        </h3>
+                                        <div class="flex items-center gap-2 mt-3 text-xs">
+                                            <span class="text-[#0090FF] font-semibold">Nasional</span>
+                                            <span class="text-gray-200 text-[8px]"><i class="fa-solid fa-circle"></i></span>
+                                            <span class="text-gray-500">22 Jan 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- FOOTER -->
+     <div id="footer-component"></div>
+
+    <script src="./JS/main.js"></script>
+    <script src="./JS/layout.js"></script>
+
+   <script>
+        function formatDate(dateString) {
+            if (!dateString) return 'Baru saja';
+            const options = { day: 'numeric', month: 'short', year: 'numeric' };
+            return new Date(dateString).toLocaleDateString('id-ID', options);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Mengubah Teks Breadcrumb
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryParam = urlParams.get('category');
+            if (categoryParam) {
+                const breadcrumbEl = document.getElementById('breadcrumb-kategori');
+                if (breadcrumbEl) { breadcrumbEl.textContent = categoryParam; }
+            }
+
+            // 2. Mengambil dan Menampilkan Isi Berita dari localStorage
+            const articleString = localStorage.getItem('selectedArticle');
+            if (articleString) {
+                const article = JSON.parse(decodeURIComponent(articleString));
+                
+                // Menentukan gambar yang tersedia (antisipasi API kadang eror format)
+                let imageUrl = 'https://via.placeholder.com/800x400?text=No+Image';
+                if (typeof article.image === 'string') {
+                    imageUrl = article.image;
+                } else if (article.image && typeof article.image === 'object') {
+                    imageUrl = article.image.large || article.image.small || article.thumbnail;
+                }
+
+                // Injeksi data ke dalam HTML
+                document.getElementById('detail-title').textContent = article.title;
+                document.getElementById('detail-category').textContent = categoryParam || article.customCategory || 'Berita';
+                document.getElementById('detail-date').textContent = formatDate(article.isoDate || article.pubDate);
+                document.getElementById('detail-image').src = imageUrl;
+                
+                // Menampilkan Deskripsi dan Tombol ke Berita Asli
+                document.getElementById('detail-content').innerHTML = `
+                    <p class="font-medium text-lg text-gray-800">${article.description || ''}</p>
+                    <p class="mt-4">Untuk membaca rincian berita selengkapnya, silakan kunjungi sumber aslinya melalui tautan di bawah ini:</p>
+                    <a href="${article.link}" target="_blank" class="inline-block mt-4 bg-[#0090FF] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-600 transition shadow-md">
+                        Baca Selengkapnya di Antara News <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                    </a>
+                `;
+            } else {
+                // Jika tidak ada data yang diklik (misal user asal refresh url)
+                document.getElementById('detail-title').textContent = "Berita tidak ditemukan";
+                document.getElementById('detail-content').innerHTML = "<p>Maaf, sesi berita sudah habis. Silakan kembali ke halaman Beranda untuk memilih berita lain.</p>";
+            }
+
+            // ==========================================
+            // LOGIKA BERITA TERKAIT & LIHAT SEMUA
+            // ==========================================
+            const apiEndpoints = {
+                'Terbaru': 'https://berita-indo-api-next.vercel.app/api/antara-news/terkini',
+                'Hiburan': 'https://berita-indo-api-next.vercel.app/api/antara-news/hiburan',
+                'Gaya Hidup': 'https://berita-indo-api-next.vercel.app/api/antara-news/lifestyle',
+                'Olahraga': 'https://berita-indo-api-next.vercel.app/api/antara-news/olahraga',
+                'Nasional': 'https://berita-indo-api-next.vercel.app/api/cnn-news/nasional',
+                'Internasional': 'https://berita-indo-api-next.vercel.app/api/cnn-news/internasional',
+                'Beranda': 'https://berita-indo-api-next.vercel.app/api/antara-news/terkini'
+            };
+
+            const relatedContainer = document.getElementById('related-news-container');
+            const btnLihatSemua = document.getElementById('btn-lihat-semua');
+            
+            // Tentukan URL API berdasarkan kategori yang ada di URL
+            const activeCategory = categoryParam || 'Terbaru';
+            const apiUrl = apiEndpoints[activeCategory] || apiEndpoints['Terbaru'];
+
+            let relatedArticles = [];
+            let isExpanded = false;
+
+            async function fetchRelatedNews() {
+                try {
+                    const response = await fetch(apiUrl);
+                    const result = await response.json();
+                    
+                    if (result.data && Array.isArray(result.data.posts)) {
+                        relatedArticles = result.data.posts;
+                    } else if (Array.isArray(result.data)) {
+                        relatedArticles = result.data;
+                    }
+
+                    // Opsional: Hapus berita yang SEDANG DIBACA agar tidak muncul ganda di "Terkait"
+                    if (articleString) {
+                        const currentArticle = JSON.parse(decodeURIComponent(articleString));
+                        relatedArticles = relatedArticles.filter(item => item.title !== currentArticle.title);
+                    }
+
+                    renderRelatedNews();
+                } catch (error) {
+                    console.error("Gagal memuat berita terkait", error);
+                    relatedContainer.innerHTML = '<p class="col-span-full text-red-500">Gagal memuat berita terkait.</p>';
+                }
+            }
+
+            function renderRelatedNews() {
+                // Tampilkan 3 berita awalnya. Jika Lihat Semua diklik, tampilkan 12 (4 baris x 3 kolom)
+                const itemsToShow = isExpanded ? relatedArticles.slice(0, 12) : relatedArticles.slice(0, 3);
+                
+                relatedContainer.innerHTML = itemsToShow.map(article => {
+                    let imgUrl = 'https://via.placeholder.com/400x250?text=No+Image';
+                    if (typeof article.image === 'string') imgUrl = article.image;
+                    else if (article.image && typeof article.image === 'object') {
+                        imgUrl = article.image.large || article.image.small || article.thumbnail;
+                    }
+
+                    const encodedArticle = encodeURIComponent(JSON.stringify(article));
+                    
+                    return `
+                    <div class="group cursor-pointer flex flex-col" onclick="goToDetail('${encodedArticle}', '${activeCategory}')">
+                        <img src="${imgUrl}" alt="News Image" class="w-full h-36 object-cover rounded-xl mb-4 group-hover:opacity-90 transition duration-300">
+                        <h3 class="font-bold text-gray-800 text-sm leading-relaxed mb-3 line-clamp-3 group-hover:text-[#0090FF] transition duration-300">
+                            ${article.title}
+                        </h3>
+                        <div class="flex items-center gap-2 text-xs mt-auto">
+                            <span class="text-[#0090FF] font-semibold uppercase">${activeCategory}</span>
+                            <span class="text-gray-300 text-[8px]"><i class="fa-solid fa-circle"></i></span>
+                            <span class="text-gray-500">${formatDate(article.isoDate || article.pubDate)}</span>
+                        </div>
+                    </div>
+                    `;
+                }).join('');
+
+                // Sembunyikan tombol jika grid sudah di-expand (terbuka 4 baris)
+                if (isExpanded || relatedArticles.length <= 3) {
+                    btnLihatSemua.style.display = 'none';
+                }
+            }
+
+            // Memberikan aksi pada tombol "Lihat Semua"
+            if (btnLihatSemua) {
+                btnLihatSemua.addEventListener('click', () => {
+                    isExpanded = true;
+                    renderRelatedNews();
+                });
+            }
+
+            // Jalankan pengambilan data berita terkait
+            fetchRelatedNews();
+      
+
+        });
+    </script>
+</body>
+</html>
