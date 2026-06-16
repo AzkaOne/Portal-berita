@@ -5,7 +5,7 @@
         headerEl.innerHTML = `
     <header>
         <nav id="navbar" class="fixed top-0 left-0 z-50 w-full bg-white border-b border-gray-200 transition-all duration-300">
-            <div class="container-custom px-4 md:px-8 mx-auto max-w-6xl">
+            <div class="container-custom px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
                 <div class="h-16 flex items-center justify-between">
                     <a href="index.html" class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition">
                         <img id="logoImage"  src="./assets/Icons/logoblue.png" alt="logo" class="w-10 h-10 object-contain">

@@ -63,8 +63,12 @@ window.addEventListener("scroll", () => {
         });
 
         // menu Beranda tetap biru
-        navLinks[0].classList.remove("text-gray-500");
-        navLinks[0].classList.add("text-blue-500");
+        const activeLink = document.querySelector('.active-category');
+
+        if (activeLink) {
+            activeLink.classList.remove('text-gray-500');
+            activeLink.classList.add('text-blue-500');
+        }
     }
 });
 
@@ -279,11 +283,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const allNavLinks = document.querySelectorAll('a[data-url]');
             allNavLinks.forEach(nav => {
-                nav.classList.remove('text-blue-500', 'font-medium');
+                nav.classList.remove('text-blue-500', 'font-medium', 'active-category');
                 nav.classList.add('text-gray-500');
             });
             link.classList.remove('text-gray-500');
-            link.classList.add('text-blue-500', 'font-medium');
+            link.classList.add('text-blue-500', 'font-medium', 'active-category');
             fetchNews(link.getAttribute('data-url'), link.textContent.trim());
         }
     });
