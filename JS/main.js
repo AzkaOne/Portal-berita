@@ -88,7 +88,7 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("bg-white", "border-gray-200");
         navbar.classList.add("bg-[#0090FF]");
         
-        logoImage.src = "./assets/Icons/Logo.png";
+        logoImage.src = "./assets/Icons/logoputih.png";
         logoText.classList.remove("text-gray-900");
         logoText.classList.add("text-white");
 

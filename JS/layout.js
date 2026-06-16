@@ -143,7 +143,7 @@
             <div class="flex flex-col lg:flex-row justify-between gap-12">
                 <div class="w-full lg:max-w-sm">
                     <div hre class="flex items-center gap-3 mb-6">
-                        <img src="./assets/Icons/Logo.png" alt="Logo Berita Kini" class="w-12 h-12 object-contain">
+                        <img src="./assets/Icons/logoputih.png" alt="Logo Berita Kini" class="w-12 h-12 object-contain">
                         <h3 class="text-3xl font-bold text-white">Berita Kini</h3>
                     </div>
                     <p class="text-white/70 text-sm mb-8">© 2026 Berita Kini. All Rights Reserved.</p>
