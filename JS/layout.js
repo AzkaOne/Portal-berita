@@ -111,14 +111,22 @@
             });
 
             // Tutup ketika user scroll
-            window.addEventListener('scroll', () => {
+            // window.addEventListener('scroll', () => {
 
+            //     mobileMenu.classList.remove('max-h-[500px]');
+            //     mobileMenu.classList.add('max-h-0');
+
+            //     icon.classList.remove('fa-xmark');
+            //     icon.classList.add('fa-bars');
+
+            // });
+            // Hapus blok kode ini dari layout.js milikmu:
+            window.addEventListener('scroll', () => {
                 mobileMenu.classList.remove('max-h-[500px]');
                 mobileMenu.classList.add('max-h-0');
 
                 icon.classList.remove('fa-xmark');
                 icon.classList.add('fa-bars');
-
             });
 
         }

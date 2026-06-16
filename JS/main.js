@@ -3,68 +3,129 @@
 // const logoImage = document.getElementById("logoImage");
 // const navLinks = document.querySelectorAll(".nav-link");
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
 
+//     const navbar = document.getElementById("navbar");
+//     const logoText = document.getElementById("logoText");
+//     const logoImage = document.getElementById("logoImage");
+//     const navLinks = document.querySelectorAll(".nav-link");
+
+//     if (!navbar) return;
+
+//     if (window.scrollY > 50) {
+
+//         navbar.classList.remove(
+//             "bg-white",
+//             "border-gray-200"
+//         );
+
+//         navbar.classList.add(
+//             "bg-[#0090FF]"
+//         );
+
+//         logoImage.src = "./assets/Icons/logo.png";
+
+//         logoText.classList.remove("text-gray-900");
+//         logoText.classList.add("text-white");
+
+//         navLinks.forEach(link => {
+
+//             link.classList.remove(
+//                 "text-gray-500",
+//                 "text-blue-500"
+//             );
+
+//             link.classList.add("text-white");
+
+//         });
+
+//     } else {
+
+//         navbar.classList.remove(
+//             "bg-[#0090FF]"
+//         );
+
+//         navbar.classList.add(
+//             "bg-white",
+//             "border-gray-200"
+//         );
+
+//         logoImage.src = "./assets/Icons/logoblue.png";
+
+//         logoText.classList.remove("text-white");
+//         logoText.classList.add("text-gray-900");
+
+//         navLinks.forEach(link => {
+
+//             link.classList.remove("text-white");
+//             link.classList.add("text-gray-500");
+
+//         });
+
+//         // menu Beranda tetap biru
+//         const activeLink = document.querySelector('.active-category');
+
+//         if (activeLink) {
+//             activeLink.classList.remove('text-gray-500');
+//             activeLink.classList.add('text-blue-500');
+//         }
+//     }
+// });
+
+window.addEventListener("scroll", () => {
     const navbar = document.getElementById("navbar");
     const logoText = document.getElementById("logoText");
     const logoImage = document.getElementById("logoImage");
-    const navLinks = document.querySelectorAll(".nav-link");
+    
+    // 1. Ubah target HANYA untuk nav-link di Desktop (Laptop) agar menu HP tidak ikut memutih
+    const navLinks = document.querySelectorAll("#nav-categories .nav-link");
+    // 2. Ambil elemen tombol ikon garis tiga (HP)
+    const mobileBtn = document.getElementById("mobileMenuBtn");
 
     if (!navbar) return;
 
     if (window.scrollY > 50) {
-
-        navbar.classList.remove(
-            "bg-white",
-            "border-gray-200"
-        );
-
-        navbar.classList.add(
-            "bg-[#0090FF]"
-        );
-
-        logoImage.src = "./assets/Icons/logo.png";
-
+        navbar.classList.remove("bg-white", "border-gray-200");
+        navbar.classList.add("bg-[#0090FF]");
+        
+        logoImage.src = "./assets/Icons/Logo.png";
         logoText.classList.remove("text-gray-900");
         logoText.classList.add("text-white");
 
+        // 3. Ubah Ikon Hamburger HP jadi Putih
+        if (mobileBtn) {
+            mobileBtn.classList.remove("text-gray-700");
+            mobileBtn.classList.add("text-white");
+        }
+
         navLinks.forEach(link => {
-
-            link.classList.remove(
-                "text-gray-500",
-                "text-blue-500"
-            );
-
+            link.classList.remove("text-gray-500", "text-blue-500");
             link.classList.add("text-white");
-
         });
 
     } else {
-
-        navbar.classList.remove(
-            "bg-[#0090FF]"
-        );
-
-        navbar.classList.add(
-            "bg-white",
-            "border-gray-200"
-        );
-
+        navbar.classList.remove("bg-[#0090FF]");
+        navbar.classList.add("bg-white", "border-gray-200");
+        
         logoImage.src = "./assets/Icons/logoblue.png";
-
         logoText.classList.remove("text-white");
         logoText.classList.add("text-gray-900");
 
+        // 4. Kembalikan Ikon Hamburger HP jadi Abu-abu
+        if (mobileBtn) {
+            mobileBtn.classList.remove("text-white");
+            mobileBtn.classList.add("text-gray-700");
+        }
+
         navLinks.forEach(link => {
-
             link.classList.remove("text-white");
-            link.classList.add("text-gray-500");
-
+            if (!link.classList.contains('text-blue-500')) {
+                link.classList.add("text-gray-500");
+            }
         });
 
-        // menu Beranda tetap biru
-        const activeLink = document.querySelector('.active-category');
-
+        // Kembalikan highlight biru pada menu desktop yang aktif
+        const activeLink = document.querySelector('#nav-categories .active-category');
         if (activeLink) {
             activeLink.classList.remove('text-gray-500');
             activeLink.classList.add('text-blue-500');
